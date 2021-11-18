@@ -708,3 +708,81 @@ html {
   line-height: 1.7rem;
 }
 /* end resume */
+/* start services */
+.services {
+  padding-top: var(--padd-top);
+  padding-bottom: var(--padd-bottom);
+}
+.services .main-heading h2::before {
+  content: "SERVICES";
+  color: rgba(0, 0, 0, 0.685) !important;
+  text-shadow: 0 0 4px rgb(0, 0, 0);
+}
+.services .boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+@media (max-width: 768px) {
+  .services .boxes {
+    grid-template-columns: 100%;
+  }
+  .services .main-heading h2::before {
+    font-size: 3.5rem;
+  }
+}
+.services .boxes .box {
+  padding: 20px 20px 60px;
+  border: 1px solid #e1b78369;
+  transition-duration: 0.3s;
+  display: flex;
+}
+.services .boxes .box:hover {
+  background-color: black;
+  border: 1px solid var(--main-color);
+}
+.services .boxes .box .col-1 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 20px;
+}
+@media (max-width: 768px) {
+  .services .boxes .box .col-1 {
+    width: 13%;
+    align-items: flex-start;
+    margin-right: 15px;
+  }
+}
+.services .boxes .box .col-1 i {
+  color: var(--main-color);
+  font-size: 40px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .services .boxes .box .col-1 i {
+    font-size: 30px;
+  }
+}
+.services .boxes .box .col-1 p {
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+  color: #2a2a2a;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.services .boxes .box .col-2 p:first-child {
+  color: var(--main-color);
+  letter-spacing: 0.2rem;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+.services .boxes .box .col-2 p:last-of-type {
+  color: white;
+  font-size: 18px;
+  line-height: 1.7rem;
+}
+/* end services */
