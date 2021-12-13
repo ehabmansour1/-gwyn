@@ -321,7 +321,7 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: calc(100vh);
+  height: 100vh;
   position: relative;
   top: -87px;
   /* z-index: -1; */
