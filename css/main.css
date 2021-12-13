@@ -134,7 +134,7 @@ html {
   padding-top: var(--padd-top);
   padding-bottom: var(--padd-bottom);
   z-index: 50;
-  position: relative;
+  position: absolute;
 }
 .header .container {
   display: flex;
