@@ -323,7 +323,6 @@ html {
   background-position: center;
   height: 100vh;
   position: relative;
-  top: -87px;
   /* z-index: -1; */
   background-attachment: fixed;
 }
