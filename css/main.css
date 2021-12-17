@@ -1032,6 +1032,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  position: relative;
 }
 .touch .container .columns .col-2 textarea {
   width: 100%;
@@ -1044,6 +1045,20 @@ html {
   border-color: transparent transparent var(--main-color) transparent;
   background-color: transparent;
 }
+.touch .container .columns .col-2 input[type="submit"] {
+  background-color: var(--main-color);
+  color: black;
+  padding: 13px 15px;
+  display: inline-block;
+  border: var(--main-color) solid 2px;
+  border-radius: 35px;
+  transition-duration: 0.3s;
+  width: fit-content;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  bottom: -150px;
+}
 .touch .container .columns .col-2 input:focus {
   outline: none;
   color: #4e4e4e;
@@ -1053,8 +1068,60 @@ html {
   border-color: transparent transparent var(--main-color) transparent;
   background-color: transparent;
 }
-.touch .container .columns .col-2 textarea:focus  {
+@media (max-width: 990px) {
+  .touch .container .columns .col-2 textarea {
+    height: 200px;
+  }
+}
+.touch .container .columns .col-2 textarea:focus {
   outline: none;
   color: #4e4e4e;
 }
 /* end get in touch */
+/* start footer */
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-top: 150px;
+  background-color: black;
+  position: relative;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0px;
+  height: 0px;
+  border: 12px solid;
+  border-color: var(--main-color) transparent transparent transparent;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.footer .container {
+  text-align: center;
+}
+.footer .container > a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  transition-duration: 0.3s;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.footer .container a:hover {
+  color: var(--main-color);
+}
+.footer .container ul {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+  list-style: none;
+}
+.footer .container ul li a {
+  color: white;
+  font-size: 20px;
+  transition-duration: 0.3s;
+}
+/* end footer */
