@@ -131,10 +131,19 @@ html {
 /* End Global Rules */
 /* start header  */
 .header {
-  padding-top: var(--padd-top);
-  padding-bottom: var(--padd-bottom);
+  padding-top: 20px;
+  padding-bottom: 20px;
   z-index: 50;
-  position: relative;
+  width: 100%;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  backdrop-filter: blur(1px);
+  background-color: #000000be;
 }
 .header .container {
   display: flex;
@@ -321,9 +330,8 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: calc(100vh);
   position: relative;
-  top: -87px;
+  /* top: -87px; */
   /* z-index: -1; */
   background-attachment: fixed;
 }

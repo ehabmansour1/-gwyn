@@ -5,6 +5,10 @@ function navOpen() {
   nav.className = "nav-opened";
   page.className = "page-down";
   body.className = "height100";
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 }
 function navClose() {
   nav.className = "nav";
